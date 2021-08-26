@@ -1,0 +1,12 @@
+<h1>Photos of "<%= @search_term %>"</h1>
+
+<ul class="photos-list">
+  <% @photos.each do |photo| %>
+    <li class="photo">
+      <%= image_tag photo.urls.full %>
+      <p><%= photo.alt_description %></p>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Next page", root_path(page: @page + 1), class: "next-page-link" %>
