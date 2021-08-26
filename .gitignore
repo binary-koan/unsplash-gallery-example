@@ -29,8 +29,9 @@
 /public/assets
 .byebug_history
 
-# Ignore master key for decrypting credentials and more.
+# Ignore credentials since this is an example project for people to set up.
 /config/master.key
+/config/credentials.yml.enc
 
 /public/packs
 /public/packs-test
